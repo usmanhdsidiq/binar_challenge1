@@ -2,7 +2,7 @@ let saldo = 5000;
 
 document.getElementById("saldo").innerText = saldo;
 
-document.getElementById("kurang").onclick = function() { // Fungsi untuk mengurangi saldo
+document.getElementById("kurangiSaldo").onclick = function() { // Fungsi untuk mengurangi saldo
     let promptKurang = window.prompt("Masukkan nominal yang ingin anda kurangi");
 
     if(promptKurang > saldo) {
@@ -13,7 +13,7 @@ document.getElementById("kurang").onclick = function() { // Fungsi untuk mengura
     }
 }
 
-document.getElementById("tambah").onclick = function() { // Fungsi untuk menambah saldo
+document.getElementById("tambahSaldo").onclick = function() { // Fungsi untuk menambah saldo
     let promptTambah = window.prompt("Masukkan nominal yang akan ditambahkan");
 
     saldo += parseInt(promptTambah);
